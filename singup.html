@@ -3,69 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>온길 - 내 정보 등록</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>온길 - 정보 등록</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-
     <div class="app-shell">
         <header class="app-header">
-            <button class="btn-back" onclick="location.href='index.html'">〈</button>
+            <button class="btn-back" onclick="location.href='./index.html'">〈</button>
             <h1 class="logo">정보 등록</h1>
         </header>
 
         <main class="app-main">
             <div class="progress-container">
-                <div class="progress-bar" id="progressBar"></div>
+                <div class="progress-bar"></div>
             </div>
 
-            <form id="signupForm">
-                <section class="form-step active">
-                    <h3>01. 기본 정보</h3>
-                    <div class="input-group">
-                        <label>사용하실 아이디</label>
-                        <input type="text" id="newId" placeholder="아이디를 입력하세요">
-                    </div>
-                    <div class="input-group">
-                        <label>비밀번호</label>
-                        <input type="password" id="newPw" placeholder="비밀번호를 입력하세요">
-                    </div>
-                </section>
+            <div class="q-card">
+                <h3>01. 기본 정보</h3>
+                <input type="text" id="newId" placeholder="아이디 입력">
+                <input type="password" id="newPw" placeholder="비밀번호 입력">
+            </div>
 
-                <section class="form-step active">
-                    <h3>02. 건강 및 보행 정보</h3>
-                    
-                    <div class="q-card">
-                        <p>1. 주로 이용하시는 보조기구가 있나요?</p>
-                        <div class="radio-group">
-                            <label><input type="radio" name="aid" value="none"> 없음</label>
-                            <label><input type="radio" name="aid" value="cane"> 지팡이</label>
-                            <label><input type="radio" name="aid" value="walker"> 보행기</label>
-                        </div>
-                    </div>
-
-                    <div class="q-card">
-                        <p>2. 평소 보행 시 가장 불편한 점은?</p>
-                        <select id="painPoint">
-                            <option value="step">높은 계단/턱</option>
-                            <option value="slope">가파른 경사로</option>
-                            <option value="distance">짧은 신호등 시간</option>
-                        </select>
-                    </div>
-
-                    <div class="q-card">
-                        <p>3. 비상 연락처 (보호자)</p>
-                        <input type="tel" id="emergencyContact" placeholder="010-0000-0000">
-                    </div>
-                </section>
-            </form>
+            <div class="q-card">
+                <h3>02. 건강 상태</h3>
+                <p>이용하시는 보조기구가 있나요?</p>
+                <div class="radio-group">
+                    <label><input type="radio" name="aid" value="지팡이"> 지팡이</label>
+                    <label><input type="radio" name="aid" value="보행기"> 보행기</label>
+                    <label><input type="radio" name="aid" value="없음"> 없음</label>
+                </div>
+            </div>
         </main>
 
         <footer class="app-footer-btn">
-            <button class="btn-primary-large" onclick="completeSignup()">가입 완료하기</button>
+            <button class="btn-primary-large" onclick="completeSignup()">가입 완료</button>
         </footer>
     </div>
-
-    <script src="js/signup.js"></script>
+    <script src="./js/signup.js"></script>
 </body>
 </html>
