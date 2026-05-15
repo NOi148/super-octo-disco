@@ -1,9 +1,0 @@
-:root { --on-gil-main: #0A6E0A; --on-gil-bg: #F5F5DC; }
-body { background-color: var(--on-gil-bg); font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-.main-container { background: white; width: 90%; max-width: 400px; padding: 30px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-.app-name { color: var(--on-gil-main); text-align: center; }
-.page { display: none; }
-.page.active { display: block; }
-input { width: 100%; padding: 12px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
-.btn-main { width: 100%; padding: 15px; background: var(--on-gil-main); color: white; border: none; border-radius: 8px; cursor: pointer; }
-.btn-text { background: none; border: none; color: gray; text-decoration: underline; width: 100%; margin-top: 10px; }
